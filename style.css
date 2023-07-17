@@ -1,7 +1,3 @@
-@import "compass/css3";
-
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800);
-
 *{
     margin: 0;
     padding: 0;
@@ -151,7 +147,7 @@ li{
 }
 .company{
     padding: 40px;
-    padding-left: 10px;
+    padding-left: 0px;
     padding-bottom: 20px;
 }
 .company h3{
@@ -197,10 +193,7 @@ li{
     color: rgb(187, 187, 187);
 }
 .subs{
-    background-image: url('./img/yellowbg.jpeg');
-    background-size: 100%;
-    background-repeat: no-repeat;
-    width: 100%;
+    background-color: gold;
     height: 80vh;
     padding-bottom: 30vh;
 }
@@ -236,7 +229,7 @@ li{
     font-weight: bold;
     padding: 15px;
     margin-top: 20px;
-    margin-left: 570px;
+    margin-left: 550px;
     border: none;
     border-radius: 7px;
     cursor: pointer;
@@ -264,7 +257,7 @@ li{
     position: absolute;
     bottom: 170;
     color: rgb(0, 59, 0);
-    background-color: rgb(255, 196, 0);
+    background-color: gold;
     padding: 5px;
     border-radius: 5px;
     text-align: center;
@@ -287,7 +280,7 @@ li{
 }
 .bam button{
     color: rgb(11, 126, 11);
-    background-color: rgb(255, 196, 0);
+    background-color: gold;
     font-weight: bolder;
     padding: 15px;
     width: 13vw;
@@ -391,7 +384,7 @@ hr{
     font-weight: bold;
     padding: 10px;
     margin-top: 20px;
-    margin-left: 600px;
+    margin-left: 590px;
     border: none;
     border-radius: 7px;
     cursor: pointer;
@@ -452,11 +445,13 @@ i{
     margin-left: 5px;
 }
 .review{
-    display: flex;
-    padding: 100px;
     position: relative;
+    padding: 100px;
+    grid-template-areas: 't,g';
 
 }
+.review-1{grid-area: t;}
+.grey{grid-area: g;}
 .review h1{
     color: rgb(1, 73, 1);
 }
@@ -471,16 +466,115 @@ i{
     margin-left: 5px;
     cursor: pointer;
 }
-.cbox{
-    display: flex;
-}
 .grey{
-    background-color: grey;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: rgba(211, 211, 211, 0.603);
     width: 50vw;
-    height: 60vh;
+    height: 54vh;
 }
 .yellow{
-    background-color: yellow;
+    position: absolute;
+    top: 100px;
+    right: 70px;
+    background-color: rgb(255, 246, 122);
+    border-radius: 15px;
     width: 50vw;
+    height: 45vh;
+}
+.yellow i{
+    margin: 40px 0px 40px 40px;
+    
+}
+.yellow h2{
+    color: rgb(112, 33, 33);
+    width: 40vw;
+    margin-left: 40px;
+    margin-top: 0px;
+}
+.profile{
+    position: relative;
+    left: 40;
+    top: 40;
+}
+.yellow img{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.yellow p{
+    color: rgb(112, 33, 33);
+    font-weight: bold;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+.instagram{
+    text-align: center;
+    padding: 60px 0px 0px 0px;
+    
+}
+.post{
+    position: relative;
+    display: inline;
+    width: 17vw;
     height: 60vh;
+    
+}
+.instagram img{
+    display: inline;
+    margin-top: 40;
+    margin-left: 10px;
+    width: 17vw;
+    height: 60vh;
+    border: 5px solid rgb(0, 94, 0);
+    border-radius: 15px;
+}
+.instagram p{
+    position: absolute;
+    bottom: 20;
+    left: 20;
+    color: white;
+    width: 150px;
+    background-color: rgb(0, 94, 0);
+    padding: 3px;
+}
+.news{
+    background-color: gold;
+    margin-top: -150px;
+    padding-top: 200px;
+    padding-bottom: 300px;
+}
+.news h1{
+    text-align: center;
+    color: rgb(0, 66, 0);
+}
+.news p{
+    text-align: justify;
+    margin-top: 20px;
+    margin-left: 25vw;
+    font-size: 20px;
+    color: rgb(0, 66, 0);
+    width: 650px;
+}
+.tp{
+ 
+    display: inline;
+    height: 200px;
+    width: 200px;
+    background: black;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.tp img {
+    margin-top: 50px;
+    height: 200px;
+    width: 200px;
+   object-fit: cover;
+   opacity: 0.6;
+   border-radius: 10px;
 }
