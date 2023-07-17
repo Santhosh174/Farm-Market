@@ -82,7 +82,7 @@ li{
     margin-bottom: 30px;
 }
 .btn{
-    margin-left: 200px;
+    margin-left: 180px;
 }
 .btn button{
   
@@ -339,4 +339,148 @@ hr{
 .bam h3{
     color: rgb(1, 58, 1);
     font-size: 25px;
+}
+.market{
+    display: flex;
+    margin-left: 16vw;
+}
+.market img{
+    width: 32vw;
+    height: 30vh;
+    border-radius: 10px;
+}
+.farm{
+    border-radius: 10px;
+  width: 32vw;
+  height: 45vh;
+  background-color: rgb(2, 100, 2);
+  margin-right: 70px;
+}
+.farm h1{
+    color: white;
+    padding: 15px 0px 5px 25px;
+}
+.farm p{
+    color: white;
+    padding: 5px 0px 5px 25px;
+}
+
+.supply h2{
+    padding-top: 10px;
+    color: rgb(0, 59, 0);
+    text-align: center;
+    font-size: 30px;
+}
+.supply p{
+    margin-left: 350px;
+    margin-top: 20px;
+    text-align: center;
+    width: 650px;
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+}
+.supply h4{
+    padding-top: 80px;
+    color: rgb(0, 59, 0);
+    text-align: center;
+    font-size: 18px;
+}
+.supply button{
+    color: rgb(255, 255, 255);
+    background-color: rgb(11, 48, 6);
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 600px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+._1stpic{
+    margin-left: 130px;
+}
+.about{
+    display: flex;
+    padding: 100px;
+    position: relative;
+
+}
+.about h1{
+    color: rgb(1, 73, 1);
+}
+.about h4,
+.about p{
+    color: black;
+    width: 400px;
+    margin-top: 30px;
+}
+.about img{
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 45vw;
+    height: 80vh;
+}
+.about button{
+    margin-top: 40px;
+    margin-right: 10px;
+    padding: 13px;
+    color: rgb(0, 95, 0);
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.insta img{
+    width: 17vw;
+    height: 60vh;
+    top: 100px;
+    right: 35vw;
+    border: 5px solid rgb(0, 94, 0);
+    border-radius: 15px;
+}
+.insta p{
+    position: absolute;
+    top: 65vh;
+    right: 40vw;
+    color: white;
+    width: 150px;
+    background-color: rgb(0, 94, 0);
+    padding: 3px;
+}
+i{
+    margin-left: 5px;
+}
+.review{
+    display: flex;
+    padding: 100px;
+    position: relative;
+
+}
+.review h1{
+    color: rgb(1, 73, 1);
+}
+.review h4,
+.review p{
+    color: black;
+    width: 400px;
+    margin-top: 30px;
+}
+.arrow i{
+    margin-top: 30px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.cbox{
+    display: flex;
+}
+.grey{
+    background-color: grey;
+    width: 50vw;
+    height: 60vh;
+}
+.yellow{
+    background-color: yellow;
+    width: 50vw;
+    height: 60vh;
 }
