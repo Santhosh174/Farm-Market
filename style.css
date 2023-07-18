@@ -89,6 +89,14 @@ li{
     font-weight: 700;
     cursor: pointer;
 }
+.btn1{
+    background-color: gold;
+}
+.btn button:hover{
+    padding: 8px;
+    transition: 0.2s;
+}
+
 .item1 { grid-area: img; }
 .item15{ grid-area: p;}
 .item2 { grid-area: h1; }
@@ -234,6 +242,11 @@ li{
     border-radius: 7px;
     cursor: pointer;
 }
+.subs button:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
 .box-content{
     margin-left:90px;
     display: flex;
@@ -287,6 +300,10 @@ li{
     border: none;
     border-radius: 7px;
     cursor: pointer;
+}
+.bam button:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
 }
 hr{
     height: 5px;
@@ -389,6 +406,10 @@ hr{
     border-radius: 7px;
     cursor: pointer;
 }
+.supply button:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+}
 ._1stpic{
     margin-left: 130px;
 }
@@ -423,6 +444,10 @@ hr{
     border-radius: 8px;
     font-weight: 700;
     cursor: pointer;
+}
+.about button:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
 }
 .insta img{
     width: 17vw;
@@ -490,33 +515,36 @@ i{
 .yellow h2{
     color: rgb(112, 33, 33);
     width: 40vw;
-    margin-left: 40px;
-    margin-top: 0px;
+    position: absolute;
+    top: 80;
+    left: 40;
 }
 .profile{
     position: relative;
-    left: 40;
-    top: 40;
+    left: 20;
+    top: 20;
 }
 .yellow img{
     border-radius: 50%;
     width: 30px;
     height: 30px;
     position: absolute;
-    bottom: 0;
-    left: 0;
+    top: 190;
+    left: -40;
 }
 .yellow p{
     color: rgb(112, 33, 33);
     font-weight: bold;
-    margin-left: 40px;
-    margin-top: 20px;
+    position: absolute;
+    top: 170;
+    left: 0;
 }
 .instagram{
     text-align: center;
     padding: 60px 0px 0px 0px;
     
 }
+
 .post{
     position: relative;
     display: inline;
@@ -546,7 +574,7 @@ i{
     background-color: gold;
     margin-top: -150px;
     padding-top: 200px;
-    padding-bottom: 300px;
+    padding-bottom: 20px;
 }
 .news h1{
     text-align: center;
@@ -558,23 +586,129 @@ i{
     margin-left: 25vw;
     font-size: 20px;
     color: rgb(0, 66, 0);
-    width: 650px;
+    width: 670px;
 }
-.tp{
- 
-    display: inline;
-    height: 200px;
+.tip{
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+}
+.tp1{
     width: 200px;
-    background: black;
-    overflow: hidden;
-    border-radius: 10px;
+    height: 200px;
+    margin-left: 30px;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3) ), url("./img/wheat.jpg");
+    position: relative;
+    border-radius: 15px;
+}
+.tp1:hover,.tp2:hover,.tp3:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+.tp2{
+    width: 200px;
+    height: 200px;
+    margin-left: 30px;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3) ), url("./img/cabbage.jpg");
+    position: relative;
+    border-radius: 15px;
+}
+.tp3{
+    width: 200px;
+    height: 200px;
+    margin-left: 30px;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3) ), url("./img/strawberry.jpg");
+    position: relative;
+    border-radius: 15px;
+}
+.tip p{
+    position: absolute;
+    top: 0;
+    right: 6vw;
+    width: 100px;
+    font-size: 15px;
+    color: white;
+}
+.tip img{
+    position: absolute;
+    top: 10;
+    right:5 ;
+    width: 50px;
+    height: 50px;
+}
+.mail{
+    padding: 50px;
+    background-color: rgb(255, 255, 255);
+}
+.ebox{
+    background-color: rgb(0, 94, 0);
+    position: relative;
+    margin-top: -130px;
+    margin-left: 260px;
+    width: 450px;
+    height: 40px;
+    padding: 50px 150px 50px 150px;
+    border-radius: 15px;
+}
+.mail input[type=email]{
+    position: absolute;
+    left: 7vw;
+    color: white;
+    background-color: rgb(0, 94, 0);
+    border: none;
+    width: 550px;
+    border-bottom: 4px solid white;
+    padding: 10px;
+}
+::placeholder{
+    color: white;
+    font-weight: bold;
+}
+.mail input[type=submit]{
+    position: absolute;
+    font-weight: bold;
+    top: 42;
+    right: 104;
+    border: none;
+    color: rgb(0, 94, 0);
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px 8px 0px 0px;
+    cursor: pointer;
 }
 
-.tp img {
-    margin-top: 50px;
-    height: 200px;
+.last{
+    background-color: white;
+    padding: 0px 130px 50px 130px;
+    display: flex;
+}
+.row1{
+    margin-left: 90px;
+}
+.row1 img{
     width: 200px;
-   object-fit: cover;
-   opacity: 0.6;
-   border-radius: 10px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+.row1 p{
+    cursor: pointer;
+    margin-bottom: 20px;
+    color: rgb(114, 114, 114);
+}
+.row1 i{
+    margin-bottom: 20px;
+}
+.dark{
+    font-weight: bold;
+}
+footer{
+    display: flex;
+    color: rgb(92, 92, 92);
+    justify-content: center;
+}
+footer p{
+    margin-left: 30px;
 }
