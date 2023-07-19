@@ -12,7 +12,7 @@ body{
     text-align: center;
     color: rgb(0, 59, 0);
     width: 100%;
-    background-image: url('./img/yellowbg.jpeg');
+    background-color: gold;
     padding: 8px;
 }
 nav{
@@ -840,3 +840,17 @@ footer p{
     }
   }
   
+
+  @media only screen and (max-width:728px) {
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    .top p{
+        text-align: center;
+        font-size: 7px;
+        padding: 5px;
+        width: 100%;
+        background-color: rgb(255, 5, 242);
+    }
+  }
