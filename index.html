@@ -31,12 +31,13 @@
         <button class="btn2">Shop Now <i class="fa-solid fa-circle-arrow-right fa-lg" style="color: #346537;"></i></button>
         </div>
     </div>
-
+<div class="reveal">
     <div class="grid">
         <div class="item1"><img src="./img/farm.jpg" alt="farm picture" class="bp"></div>
         <div class="item15"><p>Highland Orchards is your local community-supported agriculture (CSA) farm. We supply the Delaware, Philadelphia, and Newark areas with the highest quality, farm-fresh produce</p></div>
         <div class="item2"><h1>HIGHLAND ORCHARDS<br>CSA FORM</h1></div>
         <div class="item3"> <div class="box">
+            <div class="reveal fade-right">
             <div class="box1">
                 <img src="./img/bucket.jpg">
                 <h3>customers</h3>
@@ -52,10 +53,11 @@
                 <h3>Local businesses</h3>
                 <p>and non-profits get support with farm-to-table initiatives.</p>
             </div>
+            </div>
         </div>
     </div>
     </div>
-        
+</div>      
     <div class="company">
         <h3>MENTIONED BY</h3>
         <span class="fstpic"><img src="./img/delaware.png" alt="company pic"></span>
@@ -76,7 +78,9 @@
             <li>For Buisness & Non-Profits</li>
             </ul>
     </div>
+
     <div class="subs">
+        <div class="reveal">
         <h1>FARM BOX SHARE<BR>SUBSCRIPTIONS</h1>
         <p>Each week,CSA members receive a share of what we are harvesting.Offering a diverse selection of fruits,vegetables,herbs,and flowers,we're your local source of delightful flavours and natural goodness.</p>
         <h5>FOR CSA MEMBERS</h5>
@@ -84,13 +88,18 @@
         <p>Highland Orchards grows wholesome,nourshing and pesticide-free produce,flowers,and more all year round.</p>
         <button>See a full list of what we grow<i class="fa-solid fa-circle-arrow-right fa-lg" style="color: #346537;"></i></button>
     </div>
-    <div class="box-content">
+    </div>
+
+<div class="box-content">
+        <div class="reveal fade-zoom">
         <div class="b1">
         <img src="./img/fruits.png" alt="fruits">
         <h4>Fruit only share</h4>
         <p>Weekly selection of 1-4 fresh fruit</p>
         <p>Starting at<br>$12.85</p>
         </div>
+        </div>
+        <div class="reveal fade-zoom">
         <div class="b1">
             <img src="./img/veggies.jpg" alt="fruits">
             <h5>Most Popular</h5>
@@ -98,18 +107,23 @@
             <p>Weekly harvest of 6-9 vegetables,1-2 fruits and herbs</p>
             <p>Starting at<br>$16.85</p>
             </div>
+            </div>
+        <div class="reveal fade-zoom">
             <div class="b1">
                 <img src="./img/hen.png" alt="fruits">
                 <h4>Meat Share</h4>
                 <p>Choose between the chicken share of the trio meat option.</p>
                 <p>Starting at<br>$41.00</p>
                 </div>
+                </div>
+        <div class="reveal fade-zoom">
                 <div class="b1">
                     <img src="./img/flower.jpg" alt="fruits">
                     <h4>Flower Share</h4>
                     <p>Weekly and bi-weekly bouquets of fresh-cut,seasonal flowers.</p>
                     <p>Starting at<br>$15.50</p>
                     </div>
+              </div>  
     </div>
     <div class="bam">
         <button>Become a Member<i class="fa-solid fa-circle-arrow-right fa-lg" style="color: #346537;"></i></button>
@@ -191,17 +205,23 @@
         </span>
         </div>
             <div class="grey"></div>
+            
             <div class="yellow">
+                <div class="reveal">
                 <i class="fa-sharp fa-solid fa-quote-left fa-2xl" style="color: #6c4714;"></i>
                 <h2>LOVE THIS PLACE! THE WEEKLY CSA SHARE IS A GREAT WAY TO GET IN- SEASON PRODUCE FOR AN EXCELLENT VALUE.</h2>
                 <span class="profile">
                 <img src="./img/stark1.jpg">
                 <p>Tony Stark</p></span>
             </div>
+            </div>
+            
     </div>
+    
     <div class="instagram">
         <h1>FOLLOW OUR INSTAGRAM</h1>
-        <div class="posts">
+    <div class="reveal fade-right">
+        
         <div class="post">
             <img src="./img/insta1.jpg">
             <p><i class="fa-brands fa-instagram" style="color: #ffffff;"></i> highland_orchards</p>
@@ -222,8 +242,10 @@
             <img src="./img/insta5.jpg">
             <p><i class="fa-brands fa-instagram" style="color: #ffffff;"></i> highland_orchards</p>
         </div>
-        </div>
+    </div>
+        
 </div>
+
 <div class="news">
     <h1>STAY ROOTED WITH THE HIGHLAND<br> ORCHARDS NEWSLETTER</h1>
     <p><center style="font-weight: bold;">Sign Up Today</center></p>
@@ -247,9 +269,11 @@
     </div> 
 </div>
 <div class="mail">
+    <div class="reveal fade-zoom">
     <div class="ebox">
     <input type="email" placeholder="EMAIL ADDRESS">
     <input type="submit" value="Subscribe">
+    </div>
     </div>
 </div>
 <div class="last">
@@ -297,5 +321,48 @@
     <p>Shipping & Returns</p>
     <p>CCPA</p>
 </footer>
+<script>
+    function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+window.addEventListener("scroll", reveal);
+$(document).ready(function() {
+    
+    //activate wow.js
+     new WOW().init();
+  
+    //activate fullpage.js
+    $('#fullpage').fullpage({
+      scrollBar: true,
+      navigation: true,
+      navigationTooltips: ['Slide 1', 'Slide 2', 'Slide 3', 'Slide 4'],
+      loopBottom: true,
+      sectionSelector: 'section'
+    });
+  
+  //apply color to each section from array
+  int = -1;
+  color_array = ['#1abc9c','#c0392b','#9b59b6','#3498db','#f1c40f','#16a085'];
+
+  $('section').each(function(){
+    int++
+    $(this).addClass('grid-item-' + int).css('background-color', color_array[int]);
+  });
+  
+});
+
+</script>
 </body>
 </html>
