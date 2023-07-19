@@ -841,10 +841,13 @@ footer p{
   }
   
 
-  @media only screen and (max-width:728px) {
+  @media only screen and (max-width:600px) {
     *{
         margin: 0px;
         padding: 0px;
+    }
+    body{
+        overflow: hidden;
     }
     .top p{
         text-align: center;
