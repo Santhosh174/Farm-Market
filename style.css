@@ -846,7 +846,7 @@ footer p{
     display: none;
  } 
 
-  @media only screen and (max-width:600px) {
+  @media only screen and (max-width:728px) {
     *{
         margin: 0px;
         padding: 0px;
