@@ -174,21 +174,21 @@
         <p>We are proud to support local businesses and help them serve farm-to-table greatness. We also work with wellness directors to supply their in-house farmers' market with fresh produce for their employees. For more information on how we could work together, click the link and provide us with some quick contact info.</p>
         <button>Commercial Inquires<i class="fa-solid fa-circle-arrow-right fa-lg" style="color: #ffffff;"></i></button>
         <div class="company">
-            <span class="_1stpic"><img src="./img/logo5.png" alt="company pic"></span>
-            <img src="./img/logo2.png" alt="company pic">
-            <img src="./img/logo6.png" alt="company pic">
-            <img src="./img/logo1.png" alt="company pic">
-            <img src="./img/delaware.png" alt="company pic">
-            <img src="./img/logo3.png" alt="company pic">
-            <img src="./img/logo4.png" alt="company pic">
-            <img src="./img/logo7.png" alt="company pic">
+            <span class="_1stpic"><img src="./img/logo5.png" alt="company-pic"></span>
+            <img src="./img/logo2.png" alt="company-pic">
+            <img src="./img/logo6.png" alt="company-pic">
+            <img src="./img/logo1.png" alt="company1-pic">
+            <img src="./img/delaware.png" alt="company1-pic">
+            <img src="./img/logo3.png" alt="company1-pic">
+            <img src="./img/logo4.png" alt="company1-pic">
+            <img src="./img/logo7.png" alt="company1-pic">
         </div>
     </div>
     <div class="about">
         <div class="about-1">
         <h1>ABOUT US</h1>
         <h4>Family-Run Farm Delivering Freshness & Nourishment to Your Doorstep</h4>
-        <p style="color: gray;">Welcome to Highland Orchards, where our family-run farm has devoted six generations to cultivating fresh, farm-grown produce and nourishing the local community. As committed stewards of the land, we embrace sustainable practices, yielding high-quality, pesticide-free fruits, vegetables, herbs, and flowers year-round.<br><br>We've provided the Delaware, Philadelphia, and Newark areas with the highest quality, farm-fresh produce since 1832. Our CSA shares bring excitement and variety to your table with weekly farm boxes with an enticing assortment of our freshest produce</p>
+        <p style="color: gray;">Welcome to Highland Orchards, where our family-run farm has devoted six generations to cultivating fresh, farm-grown produce and nourishing the local community. As committed stewards of the land, we embrace sustainable practices, yielding high-quality, pesticide-free fruits, vegetables, herbs, and flowers year-round.<br><br><span class="pp">'ve provided the Delaware, Philadelphia, and Newark areas with the highest quality, farm-fresh produce since 1832. Our CSA shares bring excitement and variety to your table with weekly farm boxes with an enticing assortment of our freshest produce</span></p>
         <button style="background-color: rgb(1, 77, 1); color: white;">More About Us<i class="fa-solid fa-circle-arrow-right fa-lg" style="color: #ffffff;"></i></button>
         <button style="color: rgb(1, 77, 1);">Get Directions <i class="fa-solid fa-circle-arrow-right fa-lg" style="color: #346537;"></i></button>
     </div>
@@ -238,11 +238,11 @@
             <img src="./img/insta3.jpg">
             <p><i class="fa-brands fa-instagram" style="color: #ffffff;"></i> highland_orchards</p>
         </div>
-        <div class="post">
+        <div class="post" id="image">
             <img src="./img/insat4.jpg">
             <p><i class="fa-brands fa-instagram" style="color: #ffffff;"></i> highland_orchards</p>
         </div>
-        <div class="post">
+        <div class="post" id="image">
             <img src="./img/insta5.jpg">
             <p><i class="fa-brands fa-instagram" style="color: #ffffff;"></i> highland_orchards</p>
         </div>
@@ -320,10 +320,10 @@
 <footer>
     <p>Made by Searchactions</p>
     <p>ⓒHighland Orchards</p>
-    <p>Terms</p>
-    <p>Privacy </p> 
-    <p>Shipping & Returns</p>
-    <p>CCPA</p>
+    <p id="fn">Terms</p>
+    <p id="fn">Privacy </p> 
+    <p id="fn">Shipping & Returns</p>
+    <p id="fn">CCPA</p>
 </footer>
 <script>
     function reveal() {
@@ -333,7 +333,7 @@
     var windowHeight = window.innerHeight;
     var elementTop = reveals[i].getBoundingClientRect().top;
     var elementVisible = 150;
-
+    
     if (elementTop < windowHeight - elementVisible) {
       reveals[i].classList.add("active");
     } else {
@@ -341,6 +341,7 @@
     }
   }
 }
+
 window.addEventListener("scroll", reveal);
 
 

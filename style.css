@@ -858,8 +858,27 @@ footer p{
         font-size: 7px;
         padding: 5px;
     }
+    nav{
+        overflow: hidden;
+        margin-left: 4vw;
+        margin-bottom: 2vh;
+    }
+    li{
+        padding: 3px;
+    }
+    .navbar a{
+        margin-top: -5vh;
+        font-size: 5px;
+    }
+    .navbar img{
+        margin-left: 1vw;
+        padding-right: 2px;
+        margin-top: 0px;
+        width: 20vw;
+        height: 5vh;
+    }
     .head-t{
-    top: 25vh;
+    top: 10vh;
     right: 5vw;
     }
     .head{
@@ -973,10 +992,11 @@ footer p{
         font-size: 15px;
     }
     .cent ul{
-        padding:10px;    }
+        padding:10px;    
+    }
     .cent li{
-        margin-left: 2vw;
-        font-size: 10px;
+        margin-left: 5vw;
+        font-size: 8px;
     }
     .subs{
         background-color: gold;
@@ -1008,6 +1028,7 @@ footer p{
     }
     .br1,.br2{
         display: block;
+        overflow: hidden;
     }
     .box-content{
         margin-left:0vw;
@@ -1051,10 +1072,11 @@ footer p{
         width: 43vw;       
     }
     .bam p{
-        font-family:Helvetica,Arial,sans-serif;
+        font-size: 10px;
         margin-top: 2vh;
     }
     .three-box{
+        margin-top: 2vh;
         display: flex;
         padding: 0px;
         margin-left: 0vw;
@@ -1123,7 +1145,7 @@ footer p{
         margin-left: 5vw;
         margin-top: 2vh;
         width: 90vw;
-        font-size: 15px;
+        font-size: 10px;
     }
     .supply h4{
         padding-top: 40px;
@@ -1132,9 +1154,232 @@ footer p{
     .supply button{
         padding: 10px;
         margin-top: 3vh;
-        margin-left: 10vw;
+        margin-left: 32vw;
     }
     ._1stpic{
         margin-left: 2vw;
     }
+    .company img{
+        width: 20vw;
+        height: 10vh;
+    }
+    .company img[alt=company1-pic]{
+        display: none;
+    }
+    .about{
+        padding: 40px 20px 30px 20px;
+        overflow: hidden;
+    }
+    .about h1{
+        font-size: 30px;
+    }
+    .about h4{
+        margin-top: 1vh;
+        width: 50vw;
+        font-size: 15px;
+    }
+    .about p{
+        width: 45vw;
+        margin-top: 2vh;
+        font-size: 10px;
+    }
+    .pp{
+        display: none;
+    }
+    .about img{
+        display: none;
+    }
+    .about button{
+        margin: 0vh 1vw 0vh 0vw;
+        font-size: 10px;
+        padding: 10px;
+    }
+    .insta img{
+        display: block;
+        width: 35vw;
+        height: 28vh;
+        top: 3vh;
+        right: 5vw;
+    }
+    .insta p{
+        font-size: 10px;
+        top: 26vh;
+        right: 13vw;
+        width: 25vw;
+    }
+    .review{
+        overflow: hidden;
+        padding: 5vh 3vw 5vh 5vw;    
+    }
+    .review h1{
+        font-size: 30px;
+    }
+    .review h4{
+        font-size: 15px;
+        width: 50vw;
+    }
+    .review p{
+        width: 42vw;
+        font-size: 13px;
+        margin-top: 2vh;
+    }
+    .arrow i{
+        margin-top: 30px;
+        margin-left: 5px;
+        cursor: pointer;
+    }
+    .grey{
+        top: 6vh;
+        right: 0;
+        background-color: rgb(211, 211, 211);
+        width: 40vw;
+        height: 30vh;
+    }
+    .yellow{
+        top: 8vh;
+        right: 4vw;
+        background-color: rgb(255, 246, 122);
+        border-radius: 15px;
+        width: 45vw;
+        height: 30vh;
+    }
+    .yellow i{
+        margin: 40px 0px 40px 40px;
+        
+    }
+    .yellow h2{
+        font-size: 13px;
+        width: 37vw;
+        top: 8vh;
+        left: 4vw;
+    }
+    .profile{
+        left: 4vw;
+    }
+    .yellow img{
+        top: 19vh;
+        left: -10vw;
+    }
+    .yellow p{
+        top: 18vh;
+    }
+    .instagram{
+        overflow: hidden;
+        padding: 5vh 2vw 4vh 0vw;  
+    }
+    .instagram img{
+        margin-top: 3vh;
+        margin-left: 10px;
+        width: 27vw;
+        height: 30vh;
+    }
+    #image{
+        display: none;
+    }
+    .instagram p{
+        font-size: 10px;
+        bottom: 2vh;
+        left: 4vw;
+        width: 23vw;
+    }
+    .news{
+        background-color: gold;
+        margin-top: -15vh;
+        padding-top: 15vh;
+        padding-bottom: 2vh;
+    }
+    .news h1{
+        font-size: 25px;
+    }
+    .news p{
+        margin-top: 1vh;
+        margin-left: 10vw;
+        font-size: 15px;
+        width: 80vw;
+    }
+    .tip{
+        margin-top: 3vh;
+    }
+    .tp1{
+        width: 30vw;
+        height: 15vh;
+        margin-left: 1vw;
+    }
+    .tp2{
+        width: 30vw;
+        height: 15vh;
+        margin-left: 1vw;
+    }
+    .tp3{
+        width: 30vw;
+        height: 15vh;
+        margin-left: 1vw;
+    }
+    .tip p{
+        right: 15vw;
+        width: 12vw;
+        font-size: 12px;
+    }
+    .tip img{
+        top: 10;
+        right:5 ;
+        width: 10vw;
+        height: 5vh;
+    }
+    .mail{
+        overflow: hidden;
+        padding: 10px;
+        background-color: rgb(255, 255, 255);
+    }
+    .ebox{
+        margin-top: 3vh;
+        margin-left: 7vw;
+        width: 60vw;
+        height: 5vh;
+        padding: 3vh 10vw 3vh 10vw;
+        border-radius: 0;
+    }
+    .mail input[type=email]{
+
+        top: 3vh;
+        left: 7vw;
+        width: 65vw;
+    }
+    .mail input[type=submit]{
+        top: 3.4vh;
+        right: 8vw;
+        padding: 10px;
+    }
+    
+    .last{
+        background-color: white;
+        padding: 3vh 4vw 3vh 4vw;
+        display: flex;
+    }
+    .row1{
+        margin-left: 3vw;
+    }
+    .row1 img{
+        width: 15vw;
+        height: 5vh;
+        margin-bottom: 1vh;
+    }
+    .row1 p{
+        width: 20vw;
+        font-size: 10px;
+        margin-bottom: 1vh;
+    }
+    .row1 i{
+        margin-bottom: 1vh;
+    }
+    footer{
+        display: flex;
+        color: rgb(92, 92, 92);
+        justify-content: center;
+    }
+    footer p{
+        margin-left: 3vw;
+        font-size: 8px;
+    }
+    
   }
