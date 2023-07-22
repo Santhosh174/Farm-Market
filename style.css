@@ -995,7 +995,7 @@ footer p{
         padding:10px;    
     }
     .cent li{
-        margin-left: 5vw;
+        margin-left: 10vw;
         font-size: 8px;
     }
     .subs{
@@ -1236,6 +1236,7 @@ footer p{
         height: 30vh;
     }
     .yellow{
+        overflow: hidden;
         top: 8vh;
         right: 4vw;
         background-color: rgb(255, 246, 122);
