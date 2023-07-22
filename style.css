@@ -1042,6 +1042,7 @@ footer p{
     .br1{grid-area: br1;}
     .br2{grid-area: br2;}
     .b1{
+        overflow: hidden;
         margin-bottom: 2vh;
         margin-left: 2vw;
         width: 46vw;
