@@ -3,6 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HO | Farm Market</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/f144e521ca.js" crossorigin="anonymous"></script>
 </head>
@@ -10,18 +11,23 @@
     <div class="top">
     <p>ENRICHING LIVES SINCE 1832</p>
     </div>
-    <div class="navbar">
+    <div class="navbar" id="mynavbar">
         <nav>
             <li><a href="">FARM SHARES</a></li>
             <li><a href="">ONLINE MARKET</a></li>
             <li><a href="">NEWS-WHAT'S FRESH?</a></li>
-            <li><img src="./img/navlogo.jpg" alt="logo"></li>
+            <li class="active"><img src="./img/navlogo.jpg" alt="logo"></li> 
             <li><a href="">RESOURSES</a></li>
             <li><a href="">OUR CSA</a></li>
             <li><a href="">CALL-<span style="color: rgb(0, 73, 0);">101-102-1034</span></a></li>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
         </nav>
     </div>
+    <div class="s">
     <div class="head"></div>
+    
     <div class="head-t">
         <h1>GROWING FRESH,<br> SUSTAINABLE PRODUCE<br> FOR OUR COMMUNITY</h1>
         <h3>Highland Orchards cultivates fruits, vegetables, herbs, and flowers and distributes these fresh goods to farm share members and farm-to-table businesses.</h3>
@@ -30,6 +36,7 @@
         <button class="btn1">Become a Member <i class="fa-solid fa-circle-arrow-right fa-lg" style="color: #346537;"></i></button>
         <button class="btn2">Shop Now <i class="fa-solid fa-circle-arrow-right fa-lg" style="color: #346537;"></i></button>
         </div>
+    </div>
     </div>
 <div class="reveal">
     <div class="grid">
@@ -199,6 +206,7 @@
         </span>
     </div>
     <div class="review">
+        <div class="reveal">
         <div class="review-1">
         <h1>REVIEWS</h1>
         <h4>Why Our Members Love Highland Orchards</h4>
@@ -208,10 +216,9 @@
         <i class="fa-solid fa-circle-arrow-right fa-2xl" style="color: #346537;"></i>
         </span>
         </div>
-            <div class="grey"></div>
-            
+        
+            <div class="grey"></div>          
             <div class="yellow">
-                <div class="reveal">
                 <i class="fa-sharp fa-solid fa-quote-left fa-2xl" style="color: #6c4714;"></i>
                 <h2>LOVE THIS PLACE! THE WEEKLY CSA SHARE IS A GREAT WAY TO GET IN- SEASON PRODUCE FOR AN EXCELLENT VALUE.</h2>
                 <span class="profile">
@@ -219,7 +226,6 @@
                 <p>Tony Stark</p></span>
             </div>
             </div>
-            
     </div>
     
     <div class="instagram">
@@ -310,7 +316,7 @@
         <i class="fa-brands fa-instagram fa-xl" style="color: #2e7636;"></i>
         <i class="fa-brands fa-facebook fa-xl" style="color: #2e7636;"></i>
         <i class="fa-brands fa-youtube fa-xl" style="color: #2e7636;"></i>
-        <i class="fa-brands fa-twitter fa-xl" style="color: #2e7636;"></i><br>
+        <i class="fa-brands fa-twitter fa-xl" id="twitter" style="color: #2e7636;"></i><br>
         <img src="./img/map.jpeg">
         <p><span class="dark">Tuesday-Friday:</span>9:00am-6:00pm</p>
         <p><span class="dark">Saturday:</span>9:00am-5:00pm</p>
@@ -326,6 +332,16 @@
     <p id="fn">CCPA</p>
 </footer>
 <script>
+
+function myFunction() {
+  var x = document.getElementById("mynavbar");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+}
+
     function reveal() {
   var reveals = document.querySelectorAll(".reveal");
 

@@ -842,15 +842,24 @@ footer p{
       opacity: 1;
     }
   }
- .navbar button{
+ .navbar .icon{
     display: none;
  } 
-
+ @media screen and (max-width: 728px) {
+    .navbar li:not(.active) {display: none;}
+    .navbar a.icon {
+      float: right;
+      display: block;
+    }
+  }
   @media only screen and (max-width:728px) {
     *{
         margin: 0px;
         padding: 0px;
         overflow-x: hidden;
+    }
+    .btn i{
+        padding: 5px;
     }
     .top p{
         width:100%;
@@ -858,27 +867,52 @@ footer p{
         font-size: 7px;
         padding: 5px;
     }
-    nav{
-        overflow: hidden;
-        margin-left: 4vw;
-        margin-bottom: 2vh;
+    .navbar .icon{
+        padding:17px 10px 0px 0px ;
     }
-    li{
-        padding: 3px;
+    .navbar.responsive {position: relative;}
+    .navbar.responsive .icon {
+        font-size: 15px;
+        position: absolute;
+        top: 10;
+        right: 10;
+      padding: 10px 10px 0px 0px;
     }
     .navbar a{
-        margin-top: -5vh;
-        font-size: 5px;
+        color: black;
+    }
+    .navbar.responsive a{
+        font-size: 13px;
+    }
+    .navbar.responsive li {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .navbar.responsive img{
+        display: none;
+    } 
+     nav{
+        overflow: hidden;
+        padding: 5px;
+        margin-left: 0vw;
+        margin-bottom: 0vh;
+    }
+    li{
+        padding: 10px;
     }
     .navbar img{
         margin-left: 1vw;
         padding-right: 2px;
         margin-top: 0px;
-        width: 20vw;
+        width: 15vw;
         height: 5vh;
+    } 
+    .s{
+        position: relative;
     }
     .head-t{
-    top: 10vh;
+    top: 0vh;
     right: 5vw;
     }
     .head{
@@ -995,8 +1029,8 @@ footer p{
         padding:10px;    
     }
     .cent li{
-        margin-left: 10vw;
-        font-size: 8px;
+        margin-left: 8vw;
+        font-size: 7px;
     }
     .subs{
         background-color: gold;
@@ -1025,6 +1059,9 @@ footer p{
     .subs button{
         padding: 10px;
         margin:2vh 0vw 0vh 22vw;
+    }
+    .subs i{
+        padding: 7px;
     }
     .br1,.br2{
         display: block;
@@ -1066,11 +1103,14 @@ footer p{
     .bam{
         padding: 0px 20px 20px 20px;
     }
+    .bam i{
+        padding: 7px;
+    }
     .bam h2{
         margin-top: 1vh;
     }
     .bam button{
-        width: 43vw;       
+        width: 45vw;       
     }
     .bam p{
         font-size: 10px;
@@ -1152,6 +1192,9 @@ footer p{
         padding-top: 40px;
         font-size: 15px;
     }
+    .supply i{
+        padding: 8px;
+    }
     .supply button{
         padding: 10px;
         margin-top: 3vh;
@@ -1184,6 +1227,9 @@ footer p{
         margin-top: 2vh;
         font-size: 10px;
     }
+    .about-1 i{
+        padding: 7px;
+    }
     .pp{
         display: none;
     }
@@ -1192,8 +1238,8 @@ footer p{
     }
     .about button{
         margin: 0vh 1vw 0vh 0vw;
-        font-size: 10px;
-        padding: 10px;
+        font-size: 9px;
+        padding: 5px;
     }
     .insta img{
         display: block;
@@ -1210,7 +1256,10 @@ footer p{
     }
     .review{
         overflow: hidden;
-        padding: 5vh 3vw 5vh 5vw;    
+        padding: 5vh 0vw 5vh 5vw;    
+    }
+    .review-1{
+        overflow: hidden;
     }
     .review h1{
         font-size: 30px;
@@ -1225,45 +1274,50 @@ footer p{
         margin-top: 2vh;
     }
     .arrow i{
-        margin-top: 30px;
-        margin-left: 5px;
-        cursor: pointer;
+        padding: 15px 0px 15px 0px;
+        margin-top: 2vh;
+        margin-left: 1vw;
     }
     .grey{
-        top: 6vh;
+        overflow: hidden;
+        top: 4vh;
         right: 0;
         background-color: rgb(211, 211, 211);
         width: 40vw;
-        height: 30vh;
+        height: 20vh;
     }
     .yellow{
         overflow: hidden;
-        top: 8vh;
-        right: 4vw;
+        top: 5vh;
+        right: 3vw;
         background-color: rgb(255, 246, 122);
         border-radius: 15px;
         width: 45vw;
-        height: 30vh;
+        height: 20vh;
     }
     .yellow i{
-        margin: 40px 0px 40px 40px;
+        padding: 10px 0px 7px 0px;
+        margin: 3vh 0vw 0vh 3vw ;
         
     }
     .yellow h2{
-        font-size: 13px;
-        width: 37vw;
+        font-size: 10px;
+        width: 40vw;
         top: 8vh;
-        left: 4vw;
+        left: 3vw;
     }
     .profile{
-        left: 4vw;
+        left: 0vw;
     }
     .yellow img{
-        top: 19vh;
-        left: -10vw;
+        width: 4vw;
+        height: 2vh;
+        top: 10.5vh;
+        left: -6vw;
     }
     .yellow p{
-        top: 18vh;
+        font-size: 10px;
+        top: 9vh;
     }
     .instagram{
         overflow: hidden;
@@ -1279,7 +1333,7 @@ footer p{
         display: none;
     }
     .instagram p{
-        font-size: 10px;
+        font-size: 9px;
         bottom: 2vh;
         left: 4vw;
         width: 23vw;
@@ -1372,7 +1426,14 @@ footer p{
         margin-bottom: 1vh;
     }
     .row1 i{
+        padding: 10px 0px 10px 0px;
         margin-bottom: 1vh;
+        margin-left: -1px;
+        width: 25px;
+        height: 15px;
+    }
+    #twitter{
+        display: none;
     }
     footer{
         display: flex;
@@ -1381,7 +1442,7 @@ footer p{
     }
     footer p{
         margin-left: 3vw;
-        font-size: 8px;
+        font-size: 7px;
     }
     
   }
