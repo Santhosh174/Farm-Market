@@ -859,7 +859,8 @@ footer p{
         overflow-x: hidden;
     }
     .btn i{
-        padding: 5px;
+        overflow: hidden;
+        padding: 7px;
     }
     .top p{
         width:100%;
@@ -905,7 +906,7 @@ footer p{
         margin-left: 1vw;
         padding-right: 2px;
         margin-top: 0px;
-        width: 15vw;
+        width: 16vw;
         height: 5vh;
     } 
     .s{
@@ -1061,7 +1062,8 @@ footer p{
         margin:2vh 0vw 0vh 22vw;
     }
     .subs i{
-        padding: 7px;
+        overflow: hidden;
+        padding: 8px;
     }
     .br1,.br2{
         display: block;
@@ -1104,13 +1106,14 @@ footer p{
         padding: 0px 20px 20px 20px;
     }
     .bam i{
-        padding: 7px;
+        overflow: hidden;
+        padding: 8px;
     }
     .bam h2{
         margin-top: 1vh;
     }
     .bam button{
-        width: 45vw;       
+        width: 46vw;       
     }
     .bam p{
         font-size: 10px;
@@ -1227,6 +1230,9 @@ footer p{
         margin-top: 2vh;
         font-size: 10px;
     }
+    .about-1{
+        overflow: hidden;
+    }
     .about-1 i{
         padding: 7px;
     }
@@ -1298,7 +1304,7 @@ footer p{
     .yellow i{
         padding: 10px 0px 7px 0px;
         margin: 3vh 0vw 0vh 3vw ;
-        
+        overflow: hidden;
     }
     .yellow h2{
         font-size: 10px;
