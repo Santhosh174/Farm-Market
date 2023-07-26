@@ -552,7 +552,7 @@ i{
 }
 .review{
     position: relative;
-    padding: 100px;
+    padding: 100px 0px 100px 100px;
     grid-template-areas: 't,g';
 
 }
@@ -576,7 +576,7 @@ i{
 }
 .grey{
     position: absolute;
-    top: 40px;
+    top: -60px;
     right: 0;
     background-color: rgba(211, 211, 211, 0.603);
     width: 50vw;
@@ -584,7 +584,7 @@ i{
 }
 .yellow{
     position: absolute;
-    top: 100px;
+    top: 0px;
     right: 70px;
     background-color: rgb(255, 246, 122);
     border-radius: 15px;
